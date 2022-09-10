@@ -44,11 +44,11 @@ export default {
       desc: 'Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things ',
       price: 48
     },
-    count: 0,
+    count: 1,
   }),
   methods: {
     reduce() {
-      if (this.count > 0) {
+      if (this.count > 1) {
         this.count--
       }
     },
