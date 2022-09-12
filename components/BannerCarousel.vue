@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full carousel">
+  <div class="w-full carousel lg:w-2/5 lg:mx-auto">
     <div class="carousel-item w-full">
       <FoodBanner />
     </div>

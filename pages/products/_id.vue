@@ -3,12 +3,12 @@
     <BackNav title="Product"/>
 
     <main class="flex-grow">
-      <product-photo-carousel/>
-      <h2 v-if="this.product.title.length<36" class="m-4 text-xl font-semibold">
-        {{ this.product.title }}
+      <product-photo-carousel :images="product.image"/>
+      <h2 v-if="this.product.name.length<36" class="m-4 text-xl font-semibold">
+        {{ this.product.name }}
       </h2>
       <h2 v-else class="m-4 text-xl font-semibold">
-        {{ this.product.title.substring(0, 35) + " ..." }}
+        {{ this.product.name.substring(0, 35) + " ..." }}
       </h2>
       <div class="mx-4 text-md text-primary">Description</div>
       <p class="m-4 text-sm">{{ this.product.desc }}</p>
@@ -36,14 +36,11 @@
 </template>
 
 <script>
+import {state} from "@/store/index.js";
+
 export default {
   name: "product",
   data: () => ({
-    product: {
-      title: 'Big Burger With Cheese',
-      desc: 'Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things Very Nice Burger With A Lot Of Stuped Things ',
-      price: 48
-    },
     count: 1,
   }),
   methods: {
@@ -52,6 +49,11 @@ export default {
         this.count--
       }
     },
+  },
+  computed: {
+    product() {
+      return this.$store.state.products[this.$route.params.id];
+    }
   },
 }
 </script>
