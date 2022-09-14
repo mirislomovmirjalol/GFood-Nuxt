@@ -8,19 +8,11 @@
         {{ this.product.title.substring(0, 18) + " ..." }}
       </h3>
 
-      <p class="font-light text-md">${{ this.count * this.product.price }}</p>
+      <p class="font-light text-md">{{ this.count }}</p>
     </div>
     <div class="flex items-center ml-2">
       <div class="flex justify-between items-center my-4">
-        <div>
-          <button @click="this.reduce" class="btn btn-outline dark:btn-circle">
-            -
-          </button>
-          <span class="mx-2">{{ this.count }}</span>
-          <button @click="count++" class="btn btn-outline dark:btn-circle">
-            +
-          </button>
-        </div>
+        <span class="mx-2">${{ this.product.price }}</span>
       </div>
     </div>
   </div>
@@ -28,7 +20,7 @@
 
 <script>
 export default {
-  name: "CartItem",
+  name: "OrderItem",
   data: () => ({
     product: {
       title: 'Big Burger With Cheese',
@@ -38,13 +30,6 @@ export default {
     },
     count: 1,
   }),
-  methods: {
-    reduce() {
-      if (this.count > 1) {
-        this.count--
-      }
-    },
-  },
 }
 </script>
 

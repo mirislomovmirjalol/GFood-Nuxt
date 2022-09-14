@@ -16,7 +16,7 @@
 
     <footer class="mx-4 pb-4 border-t border-t-primary sticky top-[100vh]">
       <div class="flex justify-between items-center my-4">
-        <p>${{ this.product.price }}</p>
+        <p>${{ this.count * this.product.price }}</p>
         <div>
           <button @click="this.reduce" class="btn btn-outline dark:btn-circle">
             -
