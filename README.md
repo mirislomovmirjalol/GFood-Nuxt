@@ -4,6 +4,10 @@
 
 ### Food delivery app. Made using nuxt 3, tailwind 3, daisy ui
 
+## Demo
+
+### https://appgfood.netlify.app/
+
 ## Build Setup
 
 ```bash
