@@ -4,6 +4,12 @@
 
 ### Food delivery app. Made using nuxt 3, tailwind 3, daisy ui
 
+## Demo Screen shots
+
+![Screenshot](../../Downloads/localhost_3000_home(iPhone 12 Pro) (1).png)
+![Screenshot](../../Downloads/localhost_3000_home(iPhone 12 Pro).png)
+![Screenshot](../../Downloads/localhost_3000_home(iPhone 12 Pro) (2).png)
+
 ## Build Setup
 
 ```bash
