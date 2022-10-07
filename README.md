@@ -4,8 +4,9 @@
 
 ### Food delivery app. Made using nuxt 3, tailwind 3, daisy ui
 
-## Demo
+## Attention This app not optimized for desktop!
 
+## Demo
 ### https://appgfood.netlify.app/
 
 ## Build Setup
